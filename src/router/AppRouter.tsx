@@ -5,6 +5,7 @@ import Home from '@/pages/Home/Home';
 import About from '@/pages/About/About';
 import Random from '@/pages/Random/Random';
 import CowsBulls from '@/pages/CowsBulls/cowsBulls';
+import Timer from '@/pages/Random/Timer/timer';
 
 
 const AppRouter = () => {
@@ -14,6 +15,9 @@ const AppRouter = () => {
             <Route path="about" element={<About />} />
             <Route path="random" element={<Random/>} />
             <Route path="cowsBulls" element={<CowsBulls/>} />
+            <Route path="timer" element={<Timer/>} />
+
+
             
         </Route>
     </Routes>
