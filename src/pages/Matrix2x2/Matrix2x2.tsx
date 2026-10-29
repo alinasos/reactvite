@@ -21,7 +21,7 @@ const Matrix = () => {
 
     return (
         <div>
-            <h1>Matrix</h1>
+            <h1>Matrix2x2</h1>
             <div>
                 <input type="text" value={x1} onChange={e => setX1(e.target.value)} />x
                 <input type="text" value={y1} onChange={e => setY1(e.target.value)} />y
