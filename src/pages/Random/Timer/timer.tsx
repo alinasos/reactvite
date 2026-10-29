@@ -1,46 +1,33 @@
+import {useState, useEffect } from "react";
 
-import { useState, useEffect } from "react";
+export default function Timer() {
+    const [time, setTime] = useState(60);
+    const [run, setRun] = useState(false);
 
-function Timer() {
-  const [time, setTime] = useState(0);
-  const [start, setStart] = useState(false);
+    useEffect(() => {
+        if (!run || time === 0) return;
 
-  useEffect(() => {
-    if (start) {
-      const timer = setInterval(() => {
-        setTime((time) => time + 10);
-      }, 10);
+        const timer = setTimeout(() => setTime(time - 1), 1000);
+        return () => clearTimeout(timer);
+    }, [run, time]);
 
-      return () => clearInterval(timer);
-    }
-  }, [start]);
-
-  const minutes = Math.floor(time / 60000);
-  const seconds = Math.floor(time / 1000) % 60;
-  const ms = time % 1000;
-
-  return (
-    <div style={{ textAlign: "center", marginTop: "100px" }}>
-      <h1>Секундомер</h1>
-
-      <h2>
-        {String(minutes).padStart(2, "0")}:
-        {String(seconds).padStart(2, "0")}.
-        {String(ms).padStart(3, "0")}
-      </h2>
-
-      <button onClick={() => setStart(true)}>Старт</button>
-      <button onClick={() => setStart(false)}>Стоп</button>
-      <button onClick={() => {
-        setStart(false);
-        setTime(0);
-      }}>
-        Сброс
-      </button>
-    </div>
-  );
+    return (
+        <div>
+            <h1>{time} сек.</h1>
+            <button className="button" onClick={() => setRun(true)}>Старт</button>
+            <button className="button" onClick={() => setRun(false)}>Пауза</button>
+            <button className="button" onClick={() => {
+                setRun(false);
+                setTime(60);
+            }}>
+                Сброс
+            </button>
+        </div>
+    );
 }
 
-export default Timer;
+
+
+
 
 
