@@ -6,7 +6,7 @@ import About from '@/pages/About/About';
 import Random from '@/pages/Random/Random';
 import CowsBulls from '@/pages/CowsBulls/cowsBulls';
 import Timer from '@/pages/Random/Timer/timer';
-import Matrix from '@/pages/Matrix/Matrix';
+import Matrix from '@/pages/Matrix/Matrix2x2';
 import Matrix3 from '@/pages/Matrix3/Matrix3';
 const AppRouter = () => {
     return <Routes>
