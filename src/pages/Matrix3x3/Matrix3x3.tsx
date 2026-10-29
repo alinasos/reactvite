@@ -31,7 +31,7 @@ const Matrix = () => {
 
     return (
         <div>
-            <h1>Matrix</h1>
+            <h1>Matrix3x3</h1>
             <div>
                 <input type="text" value={x1} onChange={e => setX1(e.target.value)} />
                 <input type="text" value={y1} onChange={e => setY1(e.target.value)} />
