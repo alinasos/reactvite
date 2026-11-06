@@ -1,0 +1,46 @@
+
+body {
+    background-color: #f1eff8;
+ 
+}
+
+.container {
+    width: 550px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #6246b8;
+}
+
+.matrix div {
+    margin: 10px;
+}
+
+input {
+    width: 55px;
+    padding: 10px 0;
+    margin: 3px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #7456e8;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #5538c9;
+}

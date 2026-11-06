@@ -1,5 +1,6 @@
 import { useState } from "react";
-const Random = () => {
+
+const Ygadai = () => {
     const [rand, setRand] = useState(Math.round(Math.random() * 100));
     const [text, setText] = useState(0);
     const [res, setRes] = useState("");
@@ -56,4 +57,4 @@ const Random = () => {
         </div>
     );
 };
-export default Random;
+export default Ygadai;
