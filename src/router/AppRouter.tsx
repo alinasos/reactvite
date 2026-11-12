@@ -9,6 +9,7 @@ import Matrix3x3 from '@/pages/Matrix3x3/Matrix3x3';
 import Matrix4x4 from '@/pages/Matrix4x4/Matrix4x4';
 import Component from '@/pages/Comp/Comp';
 import Ygadai from "@/pages/Ygadai/ygadai";
+import Calc from "@/pages/Calc/Calc";
  
 const AppRouter = () => {
     return <Routes>
@@ -20,6 +21,7 @@ const AppRouter = () => {
             <Route path="matrix2x2" element={<Matrix2x2/>} />
             <Route path="matrix3x3" element={<Matrix3x3/>} />
             <Route path="matrix4x4" element={<Matrix4x4/>} />
+            <Route path="calc" element={<Calc/>} />
         <Route path ="Comp" element ={<Component/>}/>
 
 
